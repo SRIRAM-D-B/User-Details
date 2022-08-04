@@ -1,7 +1,9 @@
+import React from "react";
+import Fetch from "./Fetch";
 
-function App() {
+let App = () => {
   return (
-    <div>App</div>
+    <div><Fetch link={`https://randomuser.me/api/?results=10`}/></div>
   );
 }
 
