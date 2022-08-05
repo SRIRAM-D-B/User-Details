@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import './style.css'
 
 function Header({info}) {
     const [name, setName] = useState("");
@@ -11,9 +12,9 @@ function Header({info}) {
     return (
         <div>
             {
-                <form>
-                    <input type="text" placeholder='User-Name' onChange={(e) => setName(e.target.value)}/>
-                    <button onClick={() => searchName()}>Submit</button>
+                <form className="search p-5 gap-3">
+                    <input className="border-radius input" type="text" placeholder='User-Name' onChange={(e) => setName(e.target.value)}/>
+                    <button className="btn" onClick={() => searchName()}>Submit</button>
                 </form>
             }
         </div>
