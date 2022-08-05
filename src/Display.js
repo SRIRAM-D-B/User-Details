@@ -1,7 +1,5 @@
 import React from 'react'
-
-let Display = () => {
-    let info = JSON.parse(localStorage.getItem("locstr"));
+let Display = ({info}) => {
     return (
         <div>
             {
@@ -20,7 +18,7 @@ let Display = () => {
                     ))
                 }
                 {
-                    (info.length === 0) && <span>No Data</span>
+                    (info.length === 0) && <span>No data</span>
                 }
                 </div>
             }
